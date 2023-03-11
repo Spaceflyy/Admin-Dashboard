@@ -32,7 +32,18 @@
 {
    display:grid;
    grid-template: repeat(9, 1fr)/ 1fr;
-   padding: 1.5rem;
+   gap: 5px;
+   padding: 1rem;
+}
+
+.sidebar h2
+{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.sidebar img
+{
+    vertical-align: middle;
 }
 
 li
@@ -40,6 +51,8 @@ li
     padding: 0.5rem;
     list-style-type: none;
 }
+
+
 
 
 
