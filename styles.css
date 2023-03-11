@@ -23,9 +23,25 @@
 /* CSS for the sidebar */
 .sidebar
 {
+
     grid-row: 1/3;
     background-color: yellow;
 }
+
+.sidebar .nav
+{
+   display:grid;
+   grid-template: repeat(9, 1fr)/ 1fr;
+   padding: 1.5rem;
+}
+
+li
+{
+    padding: 0.5rem;
+    list-style-type: none;
+}
+
+
 
 /* CSS for main content and cards */
 
@@ -48,7 +64,6 @@
 .card-container
 {
     display:grid;
-
     grid-template: min-content 1fr 1fr 1fr  / 1fr 1fr 1fr;
     padding: 1.5rem;
     gap:1.5rem;
