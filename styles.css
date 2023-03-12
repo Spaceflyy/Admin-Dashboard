@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing:border-box;
 }
+
 /* Container for the overall layout */
 .main-container
 {
@@ -11,19 +12,58 @@
     height: 100vh;
 }
 
-
-
 /* CSS for the header */
 .header
 {
-    grid-column: 2/3;
+
     background-color: #9fa8da;
+}
+
+input[type="text"]
+{
+    border-radius: 8px;
+    height: 25px;
+    width:650px;
+    
+}
+
+#avatar-img
+{
+    height: auto;
+    width: 64px;
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+
+.header .section-one
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header #search
+{
+    display: grid;
+    flex:1;
+    padding:1.5rem;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    gap:1rem;
+}
+
+.header #account-controls
+{
+    display:grid;
+    align-items: center;
+    grid-template-columns: min-content min-content 1fr;
+    gap:1.5rem;
+    padding: 1.5rem;
 }
 
 /* CSS for the sidebar */
 .sidebar
 {
-
     grid-row: 1/3;
     background-color:#8c9eff ;
 }
@@ -41,20 +81,12 @@
     padding: 1rem;
     margin-bottom: 1rem;
 }
-.sidebar img
-{
-    vertical-align: middle;
-}
 
 li
 {
     padding: 0.5rem;
     list-style-type: none;
 }
-
-
-
-
 
 /* CSS for main content and cards */
 
@@ -104,6 +136,7 @@ li
 
 .icon
 {
+    vertical-align: middle;
     width: 24px;
     height:auto;
 }
