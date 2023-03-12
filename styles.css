@@ -92,10 +92,10 @@ input[type="text"]
 
 #header-buttons button
 {
-        width: 100px;
-        height: 40px;
-        border-radius: 20px;
-        border:none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border:none;
 }
 
 
@@ -132,7 +132,6 @@ li
 {
     display:grid;
     grid-template-columns: 3fr 1fr;
-
     background-color: #c5cae9;
 }
 
@@ -148,7 +147,7 @@ li
 .card-container
 {
     display:grid;
-    grid-template: min-content /repeat(auto-fit,minmax(20rem, 1fr));
+    grid-template: min-content /repeat(auto-fit,minmax(21rem, 1fr));
     padding: 1.5rem;
     gap:1.5rem;
 }
