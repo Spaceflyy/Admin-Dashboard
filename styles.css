@@ -147,7 +147,7 @@ li
 .card-container
 {
     display:grid;
-    grid-template: min-content /repeat(auto-fit,minmax(21rem, 1fr));
+    grid-template: min-content /repeat(auto-fit,minmax(24rem, 1fr));
     padding: 1.5rem;
     gap:1.5rem;
 }
