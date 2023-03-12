@@ -15,10 +15,23 @@
 /* CSS for the header */
 .header
 {
-
+    padding:1rem;
     background-color: #9fa8da;
 }
 
+#avatar-img-small
+{
+    width: 48px;
+}
+
+.header .section-one, .header .section-two
+{
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-around;
+}
+/* CSS for the top section of the header */
 input[type="text"]
 {
     border-radius: 8px;
@@ -27,7 +40,7 @@ input[type="text"]
     
 }
 
-#avatar-img
+#avatar-img, #avatar-img-small
 {
     height: auto;
     width: 64px;
@@ -36,17 +49,10 @@ input[type="text"]
 
 }
 
-.header .section-one
-{
-    display: flex;
-    justify-content: space-around;
-}
-
 .header #search
 {
     display: grid;
     flex:1;
-    padding:1.5rem;
     grid-template-columns: min-content 1fr;
     align-items: center;
     gap:1rem;
@@ -58,8 +64,39 @@ input[type="text"]
     align-items: center;
     grid-template-columns: min-content min-content 1fr;
     gap:1.5rem;
-    padding: 1.5rem;
+
 }
+/* CSS for the bottom section of the header */
+.header .section-two
+{
+    padding-top: 1rem;
+}
+
+.header #user-greeting
+{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    flex:1;
+    gap: 1.5rem;
+}
+
+.header #header-buttons
+{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+}
+
+#header-buttons button
+{
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border:none;
+}
+
 
 /* CSS for the sidebar */
 .sidebar
