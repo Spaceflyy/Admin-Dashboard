@@ -19,10 +19,7 @@
     background-color: #9fa8da;
 }
 
-#avatar-img-small
-{
-    width: 48px;
-}
+
 
 .header .section-one, .header .section-two
 {
@@ -47,6 +44,10 @@ input[type="text"]
     border-radius: 50%;
     vertical-align: middle;
 
+}
+#avatar-img-small
+{
+    width: 48px;
 }
 
 .header #search
@@ -171,11 +172,17 @@ li
     align-items: flex-end;
 }
 
-.icon
+.icon, .icon-large
 {
     vertical-align: middle;
     width: 24px;
     height:auto;
+}
+
+.icon-large
+{
+    width: 48px;
+
 }
 
 .card-container>h2
