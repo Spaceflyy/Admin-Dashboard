@@ -31,9 +31,10 @@
 /* CSS for the top section of the header */
 input[type="text"]
 {
-    border-radius: 8px;
+    border-radius: 15px;
     height: 25px;
     width:650px;
+    border:none;
     
 }
 
@@ -43,6 +44,7 @@ input[type="text"]
     width: 64px;
     border-radius: 50%;
     vertical-align: middle;
+    border: rgb(31, 31, 31) solid 2px;
 
 }
 #avatar-img-small
@@ -147,7 +149,7 @@ li
 .card-container
 {
     display:grid;
-    grid-template: min-content /repeat(auto-fit,minmax(24rem, 1fr));
+    grid-template: min-content /repeat(auto-fit,minmax(30rem, 1fr));
     padding: 1.5rem;
     gap:1.5rem;
 }
@@ -187,4 +189,31 @@ li
 .card-container>h2
 {
    grid-column: 1/-1;
+}
+/* CSS for trending section */
+
+.card.trending
+{
+    display:flex;
+    border:none;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.trending-item
+{
+    display:grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* CSS for the announcement section */
+
+.line
+{
+    height:1px;
+    width:100%;
+    background:black;
 }
